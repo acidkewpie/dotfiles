@@ -1,0 +1,28 @@
+[aliases]
+TelegramDesktop = "Telegram"
+"Org.gnome.Nautilus" = "Nautilus"
+"gimp-\\d\\.\\d\\d" = "Gimp"
+"Gimp-\\d\\.\\d\\d" = "Gimp"
+
+[icons]
+# fontawesome
+firefox = ""
+Google-chrome = "\uf268"
+Inkscape = "\uf312"
+Gimp = "\uf31b"
+Termite = "\uf120"
+Alacritty = "\uf120"
+Gnome-terminal = "\uf120"
+Gpick = ""
+Remote-viewer = "󰖳"
+TelegramDesktop = "󰔁"
+Code="󰨞"
+
+[general]
+separator = "  "
+default_icon = "\uf2d0"
+
+[options]
+remove_duplicates = true
+no_names = true
+

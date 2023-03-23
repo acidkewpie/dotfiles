@@ -1,0 +1,130 @@
+configuration {
+    modes: [ combi ];
+    combi-modes: [ window, drun, run ];
+    icon-theme: "Default";
+    show-icons: true;
+    terminal: "gnome-terminal";
+    disable-history: false;
+    window-format: "{t}";
+    display-run: "$";
+    display-window: "w";
+    display-drun: "d";
+}
+
+@theme "/dev/null"
+
+* {
+    bg-col:  #383c4a;
+    bg-col-light: #252033;
+    border-col: #5294e2;
+    selected-col: #7c818c;
+    blue: #5294e2;
+    fg-col: #c6d0f5;
+    fg-col2: #d3dae3;
+    grey: #737994;
+    width: 600;
+    font: "Jetbrains Mono 10";
+}
+
+element-text, element-icon , mode-switcher {
+    background-color: inherit;
+    text-color:       inherit;
+}
+
+window {
+    height: 350px;
+    border: 3px;
+    border-color: @border-col;
+    background-color: @bg-col;
+    border-radius: 10px;
+}
+
+mainbox {
+    background-color: transparent;
+}
+
+inputbar {
+    children: [entry];
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+prompt {
+    background-color: transparent;
+    padding: 6px;
+    text-color: @bg-col;
+    border-radius: 3px;
+    margin: 0px 0px 0px 15px;
+}
+
+textbox-prompt-colon {
+    expand: false;
+    str: "";
+}
+
+entry {
+    padding: 6px;
+    margin: 20px 0px 0px 20px;
+    text-color: @fg-col;
+    background-color: transparent;
+}
+
+listview {
+    border: 0px 0px 0px;
+    padding: 6px 0px 0px;
+    margin: 5px 5px 5px 5px;
+    columns: 1;
+    lines: 5;
+    background-color: transparent;
+}
+
+element {
+    padding: 5px;
+    margin: 0px 5px;
+    background-color: transparent;
+    text-color: @fg-col  ;
+}
+
+element-icon {
+    size: 18px;
+    padding: 0 10px 0 0 ;
+}
+
+element selected {
+    background-color:  @selected-col ;
+    text-color: #383c4a;
+    border-radius: 5px;
+}
+
+mode-switcher {
+    spacing: 0;
+}
+
+button {
+    padding: 10px;
+    background-color: @bg-col-light;
+    text-color: @grey;
+    vertical-align: 0.5; 
+    horizontal-align: 0.5;
+}
+
+button selected {
+  background-color: @bg-col;
+  text-color: @blue;
+}
+
+message {
+    background-color: @bg-col-light;
+    margin: 2px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+textbox {
+    padding: 6px;
+    margin: 20px 0px 0px 20px;
+    text-color: @blue;
+    background-color: @bg-col-light;
+}
+
