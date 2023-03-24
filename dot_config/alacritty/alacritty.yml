@@ -2,7 +2,7 @@ env:
   TERM: xterm-256color
 
 window:
-  opacity: 0.9
+  opacity: 0.95
   padding:
     x: 5
     y: 5
@@ -10,19 +10,19 @@ window:
 
 font:
   normal:
-    family: JetBrains Mono
+    family: JetBrainsMono Nerd Font
     style: Regular
 
   bold:
-    family: Jetbrains Mono
+    family: JetBrainsMono Nerd Font
     style: Bold
 
   italic:
-    family: Jetbrains Mono
-    style: Italic
+    family: JetBrainsMono Nerd Font
+    style: JetBrainsMono Nerd Font
 
   bold_italic:
-    family: Jetbrains Mono
+    family: JetBrainsMono Nerd Font
     style: Bold Italic
 
   size: 10

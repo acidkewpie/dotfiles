@@ -13,7 +13,7 @@ exec_always feh --bg-fill --zoom fill ~/.config/i3/wallpaper/
 exec picom
 #exec xrandr --output DisplayPort-0 --right-of HDMI-A-0 --output DVI-D-0 --left-of HDMI-A-0
 #exec xrandr --output HDMI-1 --left-of LVDS-1
-exec xrandr --output DP-1-1 --right-of eDP-1 --mode 1920x1080 --output DP-1-2 --right-of DP-1-1 --mode 1920x1080
+#exec xrandr --output DP-1-1 --right-of eDP-1 --mode 1920x1080 --output DP-1-2 --right-of DP-1-1 --mode 1920x1080
 
 for_window [class=".*"] border normal 5
 # Examples
@@ -161,6 +161,9 @@ bindsym $mod+Shift+7 move container to workspace number $ws7
 bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws0
+
+bindsym $mod+Ctrl+Right move workspace to output right
+bindsym $mod+Ctrl+Left move workspace to output left
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
