@@ -52,4 +52,4 @@ UNDER=$( tput smul )
 REVRS=$( tput rev )
 
 export PS1="\[$FGGRN\][\u@\h \[$FGBLU\]\W\[$FGGRN\]]\$ \[$RESET\]"
-
+alias cmvi="chezmoi edit -a --watch"
