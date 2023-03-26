@@ -11,7 +11,6 @@ crtc 1
 mode 1920x1200
 pos 0x0
 rate 60.00
-#rotate inverted
 x-prop-broadcast_rgb Automatic
 x-prop-colorspace Default
 x-prop-max_bpc 12
