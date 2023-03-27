@@ -23,7 +23,6 @@ configuration {
     fg-col2: #d3dae3;
     grey: #737994;
     width: 600;
-    font: "Jetbrains Mono 10";
 }
 
 element-text, element-icon , mode-switcher {

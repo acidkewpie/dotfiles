@@ -26,6 +26,9 @@ fi
 
 unset rc
 
+alias vim="nvim"
+alias vi="nvim"
+
 export EDITOR=/usr/bin/vim
 
 FGBLK=$( tput setaf 0 ) # 000000
