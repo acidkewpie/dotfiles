@@ -27,9 +27,20 @@ fi
 unset rc
 
 alias vim="nvim"
-alias vi="nvim"
 
-export EDITOR=/usr/bin/vim
+function vi() {
+  if [ $# -eq 0 ]; then
+    nvim
+    return
+  fi
+
+  # Added "--hardlink=false" option to get neovim undo available.
+  chezmoi verify $1 > /dev/null 2>&1\
+    && chezmoi edit --watch --hardlink=false $1\
+    || nvim $@
+}
+
+export EDITOR=/usr/bin/nvim
 
 FGBLK=$( tput setaf 0 ) # 000000
 FGRED=$( tput setaf 1 ) # ff0000
@@ -55,4 +66,3 @@ UNDER=$( tput smul )
 REVRS=$( tput rev )
 
 export PS1="\[$FGGRN\][\u@\h \[$FGBLU\]\W\[$FGGRN\]]\$ \[$RESET\]"
-alias vicm="chezmoi edit -a --watch"
