@@ -4,11 +4,27 @@ env:
 window:
   opacity: 0.9
   padding:
-    x: 5
-    y: 5
+    x: 2
+    y: 0
   dynamic_padding: true
 
 font:
+  normal:
+    family: monospace
+    style: Regular
+
+  bold:
+    family: monospace
+    style: Bold
+
+  italic:
+    family: monospace
+    style: Italic
+
+  bold_italic:
+    family: monospace
+    style: Bold Italic
+
   size: 10
 
 # Colors (Arc Dark)
