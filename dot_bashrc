@@ -34,7 +34,6 @@ function vi() {
     return
   fi
 
-  # Added "--hardlink=false" option to get neovim undo available.
   chezmoi verify $1 > /dev/null 2>&1\
     && chezmoi edit --watch --hardlink=false $1\
     || nvim $@
