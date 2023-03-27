@@ -7,20 +7,19 @@ TelegramDesktop = "Telegram"
 [icons]
 # fontawesome
 firefox = ""
-Google-chrome = "\uf268"
-Inkscape = "\uf312"
-Gimp = "\uf31b"
-Termite = "\uf120"
-Alacritty = "\uf120"
-Gnome-terminal = "\uf120"
-Gpick = ""
+Google-chrome = ""
+Inkscape = ""
+Gimp = ""
+Termite = "󰞷"
+Alacritty = "󰞷"
+Gnome-terminal = "󰞷"
 Remote-viewer = "󰖳"
 TelegramDesktop = "󰔁"
 Code="󰨞"
 
 [general]
 separator = "  "
-default_icon = "\uf2d0"
+default_icon = "󰘔"
 
 [options]
 remove_duplicates = true

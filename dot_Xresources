@@ -1,0 +1,19 @@
+#define c_white		#d3dae3
+#define c_purple	#766ac8
+#define c_blue 		#5294e2
+#define c_red 		#e27070
+#define c_green 	#80e270
+#define c_lightgrey 	#888888
+#define c_midgrey 	#4b5162
+#define c_darkgrey 	#383c4a
+
+*.white: c_white
+*.highlight: c_blue
+*.red: c_red
+*.green: c_green
+*.blue: c_blue
+*.purple: c_purple
+*.alert: c_red
+*.lightgrey: c_lightgrey
+*.midgrey: c_midgrey
+*.darkgrey: c_darkgrey
