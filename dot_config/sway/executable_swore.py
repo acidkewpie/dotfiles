@@ -5,7 +5,7 @@ from time import sleep
 from systemd import journal
 
 orientation = last = None
-
+single = len(sys.argv) 
 xf=open('/sys/bus/iio/devices/iio:device0/in_accel_x_raw')
 yf=open('/sys/bus/iio/devices/iio:device0/in_accel_y_raw')
 
@@ -26,7 +26,7 @@ while True:
 
     o = 2 * (y-x > 0) + (abs(x) > abs(y))
 
-    if o != orientation and (o == last or len(sys.argv)) and max(abs(x), abs(y)) > 900000:
+    if o != orientation and (o == last or single) and max(abs(x), abs(y)) > 900000:
         for m in j:
             if "Yoga usage mode changed to" in m['MESSAGE']:
                 mode = m['MESSAGE'].split()[-1]
@@ -38,7 +38,7 @@ while True:
             rotate(o)
         orientation = o
     last = o
-    if len(sys.argv) > 1:
+    if single:
         break
     sleep(1)
 
