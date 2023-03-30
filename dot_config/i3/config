@@ -16,6 +16,9 @@ font pango:monospace 10
 #title_window_icon yes
 for_window [all] title_format " %title"
 
+bindsym XF86MonBrightnessUp exec brightnessctl s +5%
+bindsym XF86MonBrightnessDown exec [ $(brightnessctl g) -gt 1000 ] && brightnessctl s 5%-
+
 bindsym XF86AudioRaiseVolume exec --no-startup-id [ "$(pactl list sinks | grep -e Name: -e Volume: | grep "$(pactl info | sed  -nr 's/Default Sink/Name/p')" -A1 | sed -nr 's/^.* ([0-9]+)\%.*/\1/p')" -lt 100 ] && pactl set-sink-volume @DEFAULT_SINK@ +10%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% 
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
@@ -90,6 +93,8 @@ bindsym Mod4+Shift+0 move container to workspace number 0:
 bindsym Mod4+Shift+c reload
 bindsym Mod4+Shift+r restart
 bindsym Mod4+Shift+e exec "i3-nagbar -t warning -m 'Exit i3' -B 'OK' 'i3-msg exit'"
+
+for_window [window_role="pop-up"]                       floating enable
 
 mode "resize" {
         bindsym Left resize shrink width 10 px or 10 ppt

@@ -25,20 +25,21 @@ unset rc
 
 function vi() {
   if [ $# -eq 0 ]; then
-    nvim
+    vim
     return
   fi
 
   chezmoi verify $1 > /dev/null 2>&1\
     && chezmoi edit --watch --hardlink=false $1\
-    || nvim $@
+    || vim $@
 }
 
-export EDITOR=/usr/bin/nvim
+export EDITOR=/usr/bin/vi
+alias google-chrome="google-chrome --password-store=gnome"
 
 FGBLK=$( tput setaf 0 ) # 000000
 FGRED=$( tput setaf 1 ) # ff0000
-FGGRN=$( tput setaf 2 ) # 00ff00
+FGGRN=$( tput setaf 10) # 00ff00
 FGYLO=$( tput setaf 3 ) # ffff00
 FGBLU=$( tput setaf 4 ) # 0000ff
 FGMAG=$( tput setaf 5 ) # ff00ff
@@ -59,4 +60,4 @@ BOLDM=$( tput bold )
 UNDER=$( tput smul )
 REVRS=$( tput rev )
 
-export PS1="\[$FGGRN\][\u@\h \[$FGBLU\]\W\[$FGGRN\]]\$ \[$RESET\]"
+export PS1="\[$BOLDM\]\[$FGGRN\]\u@\h:\[$FGBLU\]\W\[$FGGRN\] \$ \[$RESET\]"

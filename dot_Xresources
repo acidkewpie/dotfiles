@@ -1,27 +1,47 @@
-#define NORD
-#
+#define OCEANIC
+
 #ifdef NORD
+#define _foreground   	#d8dee9
+#define _background   	#2e3440
+#define _cursorColor  	#d8dee9 
+#define _black		#3b4252
+#define _red		#bf616a
+#define _green		#a3be8c
+#define _yellow		#ebcb8b
+#define _blue		#81a1c1
+#define _magenta	#b48ead
+#define _cyan		#88c0d0
+#define _white		#e5e9f0
+#define _bblack		#4c566a
+#define _bred		#bf616a
+#define _byellow	#a3be8c
+#define _bgreen 	#ebcb8b
+#define _bblue		#81a1c1
+#define _bmagenta	#b48ead
+#define _bcyan		#8fbcbb
+#define _bwhite		#eceff4
+#endif
 
-#define _foreground   	#c5c8c6
-#define _background   	#1d1f21
-#define _cursorColor  	#c5c8c6 
-#define _black		#282a2e
-#define _red		#a54242
-#define _yellow		#8c9440
-#define _green		#de935f
-#define _blue		#5f819d
-#define _magenta	#85678f
-#define _cyan		#5e8d87
-#define _white		#707880
-#define _dblack		#373b41
-#define _dred		#cc6666
-#define _dyellow	#b5bd68
-#define _dgreen		#f0c674
-#define _dblue		#81a2be
-#define _dmagenta	#b294bb
-#define _dcyan		#8abeb7
-#define _dwhite		#c5c8c6
-
+#ifdef OCEANIC
+#define _foreground   	#d8dee9
+#define _background   	#1b2b34
+#define _cursorColor  	#d8dee9
+#define _black		#29414f
+#define _red		#ec5f67
+#define _green		#99c794
+#define _yellow		#fac863
+#define _blue		#6699cc
+#define _magenta	#c594c5
+#define _cyan		#5fb3b3
+#define _white		#65737e
+#define _bblack		#405860
+#define _bred		#ec5f67
+#define _bgreen 	#99c794
+#define _byellow 	#fac863
+#define _bblue		#6699cc
+#define _bmagenta	#c594c5
+#define _bcyan		#5fb3b3
+#define _bwhite		#adb5c0
 #endif
 
 *.foreground:   _foreground
@@ -36,28 +56,28 @@
 *.color5:       _magenta
 *.color6:       _cyan
 *.color7:       _white
-*.color8:       _dblack
-*.color9:       _dred
-*.color10:      _dgreen
-*.color11:      _dyellow
-*.color12:      _dblue
-*.color13:      _dmagenta
-*.color14:      _dcyan
-*.color15:      _dwhite
+*.color8:       _bblack
+*.color9:       _bred
+*.color10:      _bgreen
+*.color11:      _byellow
+*.color12:      _bblue
+*.color13:      _bmagenta
+*.color14:      _bcyan
+*.color15:      _bwhite
 
 *.black:       	_black
 *.red: 		_red
 *.green:	_green
 *.yellow:       _yellow
-*.blue:       _blue
-*.magenta:       _magenta
-*.cyan:       _cyan
-*.white:       _white
-*.darkblack:       _dblack
-*.darkred:       _dred
-*.darkgreen:      _dgreen
-*.darkyellow:      _dyellow
-*.darkblue:      _dblue
-*.darkmagenta:      _dmagenta
-*.darkcyan:      _dcyan
-*.darkwhite:      _dwhite
+*.blue:       	_blue
+*.magenta:      _magenta
+*.cyan:       	_cyan
+*.white:       	_white
+*.bblack:       _bblack
+*.bred:       	_bred
+*.bgreen:      	_bgreen
+*.byellow:      _byellow
+*.bblue:      	_bblue
+*.bmagenta:     _bmagenta
+*.bcyan:      	_bcyan
+*.bwhite:      	_bwhite
