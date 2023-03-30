@@ -7,11 +7,11 @@
 #define c_midgrey 	#4b5162
 #define c_darkgrey 	#383c4a
 
-#IFDEF COLORS=NORD
+#ifdef NORD
 
 #define foreground   	#c5c8c6
 #define background   	#1d1f21
-#ddeinf cursorColor  	#c5c8c6 
+#define cursorColor  	#c5c8c6 
 #define black		#282a2e
 #define red		#a54242
 #define green		#8c9440
@@ -29,8 +29,8 @@
 #define darkcyan	#8abeb7
 #define darkwhite	#c5c8c6
 
-#ENDIF
-#
+#endif
+
 *.foreground:   foreground
 *.background:	background   
 *.cursorColor:  cursorColor
