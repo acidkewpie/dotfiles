@@ -52,15 +52,3 @@
 *.color13:      darkmagenta
 *.color14:      darkcyan
 *.color15:      darkwhite
-
-
-*.white: c_white
-*.highlight: c_blue
-*.red: c_red
-*.green: c_green
-*.blue: c_blue
-*.purple: c_purple
-*.alert: c_red
-*.lightgrey: c_lightgrey
-*.midgrey: c_midgrey
-*.darkgrey: c_darkgrey
