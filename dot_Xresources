@@ -7,20 +7,20 @@
 #define _cursorColor  	#c5c8c6 
 #define _black		#282a2e
 #define _red		#a54242
-#define _green		#8c9440
-#define _yellow		#de935f
+#define _yellow		#8c9440
+#define _green		#de935f
 #define _blue		#5f819d
 #define _magenta	#85678f
 #define _cyan		#5e8d87
 #define _white		#707880
-#define _darkblack	#373b41
-#define _darkred	#cc6666
-#define _darkgreen	#b5bd68
-#define _darkyellow	#f0c674
-#define _darkblue	#81a2be
-#define _darkmagenta	#b294bb
-#define _darkcyan	#8abeb7
-#define _darkwhite	#c5c8c6
+#define _dblack		#373b41
+#define _dred		#cc6666
+#define _dyellow	#b5bd68
+#define _dgreen		#f0c674
+#define _dblue		#81a2be
+#define _dmagenta	#b294bb
+#define _dcyan		#8abeb7
+#define _dwhite		#c5c8c6
 
 #endif
 
