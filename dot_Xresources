@@ -1,12 +1,3 @@
-#define c_white		#d3dae3
-#define c_purple	#766ac8
-#define c_blue 		#5294e2
-#define c_red 		#e27070
-#define c_green 	#80e270
-#define c_lightgrey 	#888888
-#define c_midgrey 	#4b5162
-#define c_darkgrey 	#383c4a
-
 #define NORD
 #
 #ifdef NORD
@@ -36,6 +27,7 @@
 *.foreground:   _foreground
 *.background:	_background   
 *.cursorColor:  _cursorColor
+
 *.color0:       _black
 *.color1:       _red
 *.color2:       _green
@@ -52,3 +44,21 @@
 *.color13:      _darkmagenta
 *.color14:      _darkcyan
 *.color15:      _darkwhite
+
+
+*.black:       	_black
+*.red: 		_red
+*.green:	_green
+*.yellow:       _yellow
+*.blue:       _blue
+*.magenta:       _magenta
+*.cyan:       _cyan
+*.white:       _white
+*.darkblack:       _darkblack
+*.darkred:       _darkred
+*.darkgreen:      _darkgreen
+*.darkyellow:      _darkyellow
+*.darkblue:      _darkblue
+*.darkmagenta:      _darkmagenta
+*.darkcyan:      _darkcyan
+*.darkwhite:      _darkwhite
