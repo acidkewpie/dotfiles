@@ -11,44 +11,44 @@
 #
 #ifdef NORD
 
-#define foreground   	#c5c8c6
-#define background   	#1d1f21
-#define cursorColor  	#c5c8c6 
-#define black		#282a2e
-#define red		#a54242
-#define green		#8c9440
-#define yellow		#de935f
-#define blue		#5f819d
-#define magenta		#85678f
-#define cyan		#5e8d87
-#define white		#707880
-#define darkblack	#373b41
-#define darkred		#cc6666
-#define darkgreen	#b5bd68
-#define darkyellow	#f0c674
-#define darkblue	#81a2be
-#define darkmagenta	#b294bb
-#define darkcyan	#8abeb7
-#define darkwhite	#c5c8c6
+#define _foreground   	#c5c8c6
+#define _background   	#1d1f21
+#define _cursorColor  	#c5c8c6 
+#define _black		#282a2e
+#define _red		#a54242
+#define _green		#8c9440
+#define _yellow		#de935f
+#define _blue		#5f819d
+#define _magenta	#85678f
+#define _cyan		#5e8d87
+#define _white		#707880
+#define _darkblack	#373b41
+#define _darkred	#cc6666
+#define _darkgreen	#b5bd68
+#define _darkyellow	#f0c674
+#define _darkblue	#81a2be
+#define _darkmagenta	#b294bb
+#define _darkcyan	#8abeb7
+#define _darkwhite	#c5c8c6
 
 #endif
 
-*.foreground:   foreground
-*.background:	background   
-*.cursorColor:  cursorColor
-*.color0:       black
-*.color1:       red
-*.color2:       green
-*.color3:       yellow
-*.color4:       blue
-*.color5:       magenta
-*.color6:       cyan
-*.color7:       white
-*.color8:       darkblack
-*.color9:       darkred
-*.color10:      darkgreen
-*.color11:      darkyellow
-*.color12:      darkblue
-*.color13:      darkmagenta
-*.color14:      darkcyan
-*.color15:      darkwhite
+*.foreground:   _foreground
+*.background:	_background   
+*.cursorColor:  _cursorColor
+*.color0:       _black
+*.color1:       _red
+*.color2:       _green
+*.color3:       _yellow
+*.color4:       _blue
+*.color5:       _magenta
+*.color6:       _cyan
+*.color7:       _white
+*.color8:       _darkblack
+*.color9:       _darkred
+*.color10:      _darkgreen
+*.color11:      _darkyellow
+*.color12:      _darkblue
+*.color13:      _darkmagenta
+*.color14:      _darkcyan
+*.color15:      _darkwhite
