@@ -7,6 +7,8 @@
 #define c_midgrey 	#4b5162
 #define c_darkgrey 	#383c4a
 
+#define NORD
+#
 #ifdef NORD
 
 #define foreground   	#c5c8c6
