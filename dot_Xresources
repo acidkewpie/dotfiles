@@ -5,22 +5,22 @@
 #define _foreground   	#c5c8c6
 #define _background   	#1d1f21
 #define _cursorColor  	#c5c8c6 
-#define _black		#282a2e
-#define _red		#a54242
-#define _yellow		#8c9440
-#define _green		#de935f
-#define _blue		#5f819d
-#define _magenta	#85678f
-#define _cyan		#5e8d87
-#define _white		#707880
-#define _dblack		#373b41
-#define _dred		#cc6666
-#define _dyellow	#b5bd68
-#define _dgreen		#f0c674
-#define _dblue		#81a2be
-#define _dmagenta	#b294bb
-#define _dcyan		#8abeb7
-#define _dwhite		#c5c8c6
+#define _dblack		#282a2e
+#define _dred		#a54242
+#define _dyellow		#8c9440
+#define _dgreen		#de935f
+#define _dblue		#5f819d
+#define _dmagenta	#85678f
+#define _dcyan		#5e8d87
+#define _dwhite		#707880
+#define _black		#373b41
+#define _red		#cc6666
+#define _yellow	#b5bd68
+#define _green		#f0c674
+#define _blue		#81a2be
+#define _magenta	#b294bb
+#define _cyan		#8abeb7
+#define _white		#c5c8c6
 
 #endif
 
@@ -36,14 +36,14 @@
 *.color5:       _magenta
 *.color6:       _cyan
 *.color7:       _white
-*.color8:       _darkblack
-*.color9:       _darkred
-*.color10:      _darkgreen
-*.color11:      _darkyellow
-*.color12:      _darkblue
-*.color13:      _darkmagenta
-*.color14:      _darkcyan
-*.color15:      _darkwhite
+*.color8:       _dblack
+*.color9:       _dred
+*.color10:      _dgreen
+*.color11:      _dyellow
+*.color12:      _dblue
+*.color13:      _dmagenta
+*.color14:      _dcyan
+*.color15:      _dwhite
 
 
 *.black:       	_black
