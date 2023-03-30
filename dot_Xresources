@@ -7,43 +7,49 @@
 #define c_midgrey 	#4b5162
 #define c_darkgrey 	#383c4a
 
+#IFDEF COLORS=NORD
 
-! special
-*.foreground:   #c5c8c6
-*.background:   #1d1f21
-*.cursorColor:  #c5c8c6
+#define foreground   	#c5c8c6
+#define background   	#1d1f21
+#ddeinf cursorColor  	#c5c8c6 
+#define black		#282a2e
+#define red		#a54242
+#define green		#8c9440
+#define yellow		#de935f
+#define blue		#5f819d
+#define magenta		#85678f
+#define cyan		#5e8d87
+#define white		#707880
+#define darkblack	#373b41
+#define darkred		#cc6666
+#define darkgreen	#b5bd68
+#define darkyellow	#f0c674
+#define darkblue	#81a2be
+#define darkmagenta	#b294bb
+#define darkcyan	#8abeb7
+#define darkwhite	#c5c8c6
 
-! black
-*.color0:       #282a2e
-*.color8:       #373b41
-
-! red
-*.color1:       #a54242
-*.color9:       #cc6666
-
-! green
-*.color2:       #8c9440
-*.color10:      #b5bd68
-
-! yellow
-*.color3:       #de935f
-*.color11:      #f0c674
-
-! blue
-*.color4:       #5f819d
-*.color12:      #81a2be
-
-! magenta
-*.color5:       #85678f 
-*.color13:      #b294bb
-
-! cyan
-*.color6:       #5e8d87 
-*.color14:      #8abeb7
-
-! white
-*.color7:       #707880
-*.color15:      #c5c8c6
+#ENDIF
+#
+*.foreground:   foreground
+*.background:	background   
+*.cursorColor:  cursorColor
+*.color0:       black
+*.color1:       red
+*.color2:       green
+*.color3:       yellow
+*.color4:       blue
+*.color5:       magenta
+*.color6:       cyan
+*.color7:       white
+*.color8:       darkblack
+*.color9:       darkred
+*.color10:      darkgreen
+*.color11:      darkyellow
+*.color12:      darkblue
+*.color13:      darkmagenta
+*.color14:      darkcyan
+*.color15:      darkwhite
 
 
 *.white: c_white
