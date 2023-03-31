@@ -12,7 +12,7 @@ for_window [class=".*"] border pixel 5
 gaps inner 10
 gaps top 35
 
-font pango:monospace 10
+font pango:monospace 0
 #title_window_icon yes
 for_window [all] title_format " %title"
 
