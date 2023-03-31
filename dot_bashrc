@@ -62,4 +62,4 @@ REVRS=$( tput rev )
 
 
 
-export PS1="\[$BOLDM\]\[$FGGRN\]\u@\h:\[$FGBLU\]\W\[$FGGRN\] \$ \[$RESET\]"
+export PS1="\[$BOLDM\]\[$FGGRN\]\u@\h:\[$FGBLU\]\W\[$FGMAG\] \$ \[$RESET\]"
