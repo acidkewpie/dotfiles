@@ -60,4 +60,6 @@ BOLDM=$( tput bold )
 UNDER=$( tput smul )
 REVRS=$( tput rev )
 
+
+
 export PS1="\[$BOLDM\]\[$FGGRN\]\u@\h:\[$FGBLU\]\W\[$FGGRN\] \$ \[$RESET\]"
