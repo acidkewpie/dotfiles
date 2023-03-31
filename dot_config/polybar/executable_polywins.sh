@@ -146,7 +146,6 @@ get_active_workspace() {
 
 mangle_window_title() {
 
-	echo $2 >> /tmp/bob
 	case "${1,,}" in
 		*inkscape) echo  $2 | sed 's/ - Inkscape//';;
 		gimp*) echo  $2 | sed 's/ - GIMP//';;
@@ -172,7 +171,7 @@ generate_window_list() {
 	then 
 	char_limit=$(($total_char_limit / $wins))
 
-	while IFS="[ ]" read -r wid ws cname_cls host title; do
+	while read -r wid ws cname_cls host title; do
 		cls=${cname_cls##*.}
 		cname=${cname_cls%.*}
 		# Don't show the window if on another workspace (-1 = sticky)
@@ -191,12 +190,12 @@ generate_window_list() {
 			window_count=$(( window_count + 1 ))
 			continue
 		fi
-
+		
 		# Show the user-selected window property
 		case "$show" in
 			"window_class") w_name="$cls" ;;
 			"window_classname") w_name="$cname" ;;
-			"window_title") w_name=$(mangle_window_title "$cname" "$title") ;;
+			"window_title") w_name=$(mangle_window_title "$cname" "$title");;
 		esac
 		
 		# Use user-selected character case
