@@ -104,7 +104,7 @@
 *.bcyan:      	_bcyan
 *.bwhite:      	_bwhite
 
-Xft.dpi: 96
-Xft.hintstyle: hintmedium
-Xft.hinting: true
+Xft.dpi: 	96
+Xft.hintstyle: 	hintmedium
+Xft.hinting: 	true
 
