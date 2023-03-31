@@ -88,6 +88,8 @@
 *.orange:	_orange
 *.brown:	_brown
 
+*.grey:		#888888
+
 Xft.dpi: 	96
 Xft.hintstyle: 	hintmedium
 Xft.hinting: 	true
