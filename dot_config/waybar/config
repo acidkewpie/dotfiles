@@ -102,8 +102,6 @@
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}",
 	"format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
-
-`
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
