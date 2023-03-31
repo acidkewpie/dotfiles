@@ -148,7 +148,7 @@ mangle_window_title() {
 
 	case "${1,,}" in
 		*inkscape) echo  $2 | sed 's/ - Inkscape//';;
-		#gimp*) echo  $2 | sed 's/ - GIMP//';;
+		gimp*) echo  $2 | sed 's/ - GIMP//';;
 		google-chrome) echo   $2 | sed 's/ - Google Chrome//';;
 		code) echo 󰨞 $2 | sed 's/ - Visual Studio Code//';;
 		alacritty) echo 󰞷 $2 ;;
