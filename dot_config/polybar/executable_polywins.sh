@@ -146,6 +146,7 @@ get_active_workspace() {
 
 mangle_window_title() {
 
+	echo $2 >> /tmp/bob
 	case "${1,,}" in
 		*inkscape) echo  $2 | sed 's/ - Inkscape//';;
 		gimp*) echo  $2 | sed 's/ - GIMP//';;
