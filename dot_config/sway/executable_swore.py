@@ -5,7 +5,7 @@ from time import sleep
 from systemd import journal
 
 orientation = last = None
-single = len(sys.argv) 
+single = len(sys.argv) > 1 
 xf=open('/sys/bus/iio/devices/iio:device0/in_accel_x_raw')
 yf=open('/sys/bus/iio/devices/iio:device0/in_accel_y_raw')
 
