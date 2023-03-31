@@ -35,6 +35,28 @@
 #define _cyan		#5fb3b3
 #define _white		#65737e
 #define _bblack		#405860
+#define _bred		_red
+#define _bgreen 	_green
+#define _byellow 	_yellow
+#define _bblue		_blue
+#define _bmagenta	_magenta
+#define _bcyan		_cyan
+#define _bwhite		#adb5c0
+#endif
+
+#ifdef OCEANICX
+#define _foreground   	#d8dee9
+#define _background   	#1b2b34
+#define _cursorColor  	#d8dee9
+#define _black		#29414f
+#define _red		#ec5f67
+#define _green		#99C794
+#define _yellow		#fac863
+#define _blue		#6699cc
+#define _magenta	#c594c5
+#define _cyan		#5fb3b3
+#define _white		#65737e
+#define _bblack		#405860
 #define _bred		#ec5f67
 #define _bgreen 	#99c794
 #define _byellow 	#fac863
@@ -76,9 +98,6 @@
 *.magenta:      _magenta
 *.cyan:       	_cyan
 *.white:       	_white
-*.orange:	_orange
-*.brown:	_brown
-
 *.bblack:       _bblack
 *.bred:       	_bred
 *.bgreen:      	_bgreen
@@ -87,6 +106,9 @@
 *.bmagenta:     _bmagenta
 *.bcyan:      	_bcyan
 *.bwhite:      	_bwhite
+
+*.orange:	_orange
+*.brown:	_brown
 
 Xft.dpi: 	96
 Xft.hintstyle: 	hintmedium
