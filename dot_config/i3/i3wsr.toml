@@ -18,7 +18,6 @@ TelegramDesktop = "󰔁"
 Code="󰨞"
 
 [general]
-separator = "  "
 default_icon = "󰘔"
 
 [options]
