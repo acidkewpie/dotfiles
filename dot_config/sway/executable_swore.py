@@ -16,7 +16,7 @@ j.add_match("SYSLOG_IDENTIFIER=kernel")
 
 def rotate(o):
     check_output('swaymsg output eDP-1 transform ' + ['normal', '270', '180', '90'][o], shell=True)
-    check_output('pkill -SIGUSR' + ['1', '2', '1', '2'][o] + ' wvkbd-mobintl', shell=True)
+#    check_output('pkill -SIGUSR' + ['1', '2', '1', '2'][o] + ' wvkbd-mobintl', shell=True)
 
 while True:
     xf.seek(0)
