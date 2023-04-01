@@ -10,7 +10,7 @@ exec_always --no-startup-id $HOME/.cargo/bin/i3wsr --config $HOME/.config/i3/i3w
 
 for_window [class=".*"] border pixel 5
 gaps inner 10
-gaps top 35
+gaps top 30
 
 font pango:monospace 0
 #title_window_icon yes
