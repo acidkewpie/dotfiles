@@ -3,8 +3,8 @@
 
 # SETTINGS {{{ ---
 
-active_text_color="#d3dae3"
-active_bg="#4b5162"
+active_text_color=$ACTIVE_FG
+active_bg=$ACTIVE_BG
 active_underline=$UNDERLINE
 #"#5294e2"
 
