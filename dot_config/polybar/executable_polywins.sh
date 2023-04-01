@@ -8,7 +8,7 @@ active_bg=$ACTIVE_BG
 active_underline=$UNDERLINE
 #"#5294e2"
 
-inactive_text_color=$ACTIVE_FG
+inactive_text_color=$INACTIVE_FG
 inactive_bg=$INACTIVE_BG
 inactive_underline=
 
