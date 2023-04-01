@@ -110,7 +110,7 @@ bindsym Mod4+r mode "resize"
 
 set_from_resource $text white
 set_from_resource $active blue
-set_from_resource $inactive red
+set_from_resource $inactive bblack
 set_from_resource $unfocused bblack
 
 client.focused           $active    $active    $text $active 
