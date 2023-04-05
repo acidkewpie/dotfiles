@@ -45,7 +45,7 @@
 #endif
 
 #define _orange		#f99157
-#define _purple		#5a3194
+#define _purple		#66489f
 #define _brown	 	#AB7967	
 
 *.foreground:   _foreground
