@@ -27,9 +27,9 @@ while True:
     else: 
         timeout, color = 300, BLUE
 
-    print(  color + '' if mouse else color + '', 
-            color + '' if keyboard else color + '', 
-            sep='%{F-}', flush=True)
+    print(  GREEN + '' if mouse else color + '', 
+            GREEN + '' if keyboard else color + '', 
+            sep='', flush=True)
 
     for device in iter(partial(monitor.poll, timeout), None):
         if 'K850' in device.get('HID_NAME') and device.action == 'add':
