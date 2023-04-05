@@ -22,11 +22,13 @@ while True:
     if mouse is not keyboard:
         timeout, color = 5, RED
         run(['/usr/bin/aplay', '/etc/sounds/honk.wav', '-q'])
-    else:
+    elif mouse and keyboard:
         timeout, color = 300, GREEN
+    else: 
+        timeout, color = 300, BLUE
 
-    print(  GREEN + '' if mouse else color + '', 
-            GREEN + '' if keyboard else color + '', 
+    print(  color + '' if mouse else color + '', 
+            color + '' if keyboard else color + '', 
             sep='%{F-}', flush=True)
 
     for device in iter(partial(monitor.poll, timeout), None):
