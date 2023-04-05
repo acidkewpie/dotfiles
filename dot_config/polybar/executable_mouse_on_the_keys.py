@@ -15,11 +15,15 @@ for device in context.list_devices(subsystem='hid'):
 
 while True:
 
-    print("" if mouse else "%{F#F00}", "" if keyboard else "%{F#F00}", sep='%{F-}', flush=True)
-    timeout = 300
     if mouse is not keyboard:
-        timeout = 5
+        timeout, color = 5, "%{F#F00}"
         subprocess.run(["/usr/bin/aplay", "/etc/sounds/honk.wav", "-q"])
+    else:
+        timeout, color = 300, ""
+
+    print(  "" if mouse else color + "", 
+            "" if keyboard else color + "", 
+            sep='%{F-}', flush=True)
 
     for device in iter(partial(monitor.poll, timeout), None):
         if 'K850' in device.get('HID_NAME') and device.action == 'add':
