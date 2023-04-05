@@ -25,8 +25,8 @@ while True:
     else:
         timeout, color = 300, GREEN
 
-    print(  '' if mouse else color + '', 
-            '' if keyboard else color + '', 
+    print(  GREEN + '' if mouse else color + '', 
+            GREEN + '' if keyboard else color + '', 
             sep='%{F-}', flush=True)
 
     for device in iter(partial(monitor.poll, timeout), None):
