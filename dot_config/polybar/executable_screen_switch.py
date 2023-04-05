@@ -18,7 +18,7 @@ def set_source(s):
             "dev:/dev/i2c-16"], capture_output=True, timeout=10)
         _s = s
 
-print(BLUE + '', flush=True)
+print(RED + '', flush=True)
 for d in evdev.util.list_devices():
     device = evdev.InputDevice(d)
     if device_name == device.name:
