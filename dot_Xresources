@@ -45,6 +45,7 @@
 #endif
 
 #define _orange		#f99157
+#define _purple		#5a3194
 #define _brown	 	#AB7967	
 
 *.foreground:   _foreground
@@ -86,6 +87,7 @@
 *.bwhite:      	_bwhite
 
 *.orange:	_orange
+*.purple:	_purple
 *.brown:	_brown
 
 *.grey:		#888888
