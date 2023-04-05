@@ -1,5 +1,5 @@
 #!/usr/bin/python
-import subprocess
+from subprocess import run
 from pyudev import Context, Monitor
 from functools import partial
 
@@ -17,7 +17,7 @@ while True:
 
     if mouse is not keyboard:
         timeout, color = 5, '%{F#F00}'
-        subprocess.run(['/usr/bin/aplay', '/etc/sounds/honk.wav', '-q'])
+        run(['/usr/bin/aplay', '/etc/sounds/honk.wav', '-q'])
     else:
         timeout, color = 300, ''
 
