@@ -11,6 +11,7 @@ BLUE = '%{F' + (environ.get('BLUE') or '#00F') + '}'
 context = Context()
 monitor = Monitor.from_netlink(context)
 monitor.filter_by('hid')
+
 for device in context.list_devices(subsystem='hid'):
     if 'K850' in device.get('HID_NAME'):
         keyboard = True
@@ -19,15 +20,14 @@ for device in context.list_devices(subsystem='hid'):
 
 while True:
 
+    timeout = 300
     if mouse is not keyboard:
         timeout = 5
         run(['/usr/bin/aplay', '/etc/sounds/honk.wav', '-q'])
         print(GREEN + '' + RED + '' if mouse else RED + '' + GREEN + '', flush=True)
     elif mouse and keyboard:
-        timeout, color = 300, GREEN
         print(GREEN + '', flush=True)
     else: 
-        timeout, color = 300, BLUE
         print(BLUE + '', flush=True)
 
     for device in iter(partial(monitor.poll, timeout), None):
