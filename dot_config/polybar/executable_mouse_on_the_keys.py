@@ -2,11 +2,15 @@
 from subprocess import run
 from pyudev import Context, Monitor
 from functools import partial
+from os import environ
+
+RED = '%{F' + (environ.get('RED') or '#F00') + '}'
+GREEN = '%{F' + (environ.get('GREEN') or '#0F0') + '}'
+BLUE = '%{F' + (environ.get('BLUE') or '#00F') + '}'
 
 context = Context()
 monitor = Monitor.from_netlink(context)
 monitor.filter_by('hid')
-
 for device in context.list_devices(subsystem='hid'):
     if 'K850' in device.get('HID_NAME'):
         keyboard = True
@@ -16,10 +20,10 @@ for device in context.list_devices(subsystem='hid'):
 while True:
 
     if mouse is not keyboard:
-        timeout, color = 5, '%{F#F00}'
+        timeout, color = 5, RED
         run(['/usr/bin/aplay', '/etc/sounds/honk.wav', '-q'])
     else:
-        timeout, color = 300, ''
+        timeout, color = 300, GREEN
 
     print(  '' if mouse else color + '', 
             '' if keyboard else color + '', 
