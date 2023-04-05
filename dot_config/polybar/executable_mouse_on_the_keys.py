@@ -30,7 +30,6 @@ while True:
             sep='%{F-}', flush=True)
 
     for device in iter(partial(monitor.poll, timeout), None):
-        print(device.get('HID_NAME'))
         if 'K850' in device.get('HID_NAME') and device.action == 'add':
             keyboard = True
         if 'K850' in device.get('HID_NAME') and device.action == 'remove':
