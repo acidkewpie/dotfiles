@@ -4,7 +4,7 @@ exec numlockx on
 
 exec_always $HOME/.config/polybar/launch.sh
 exec_always feh --bg-fill --zoom fill ~/.config/i3/wallpaper/
-exec_always --no-startup-id $HOME/.cargo/bin/i3wsr --config $HOME/.config/i3/i3wsr.toml
+#exec_always --no-startup-id $HOME/.cargo/bin/i3wsr --config $HOME/.config/i3/i3wsr.toml
 
 #exec xrandr --output DP-1-1 --right-of eDP-1 --mode 1920x1080 --output DP-1-2 --right-of DP-1-1 --mode 1920x1080
 
