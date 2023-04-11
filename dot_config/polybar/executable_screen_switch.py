@@ -9,6 +9,8 @@ RED = '%{F' + (environ.get('RED') or '#F00') + '}'
 YELLOW = '%{F' + (environ.get('YELLOW') or '#0F0') + '}'
 HIGHLIGHT = '%{F' + (environ.get('HIGHLIGHT') or '#00F') + '}'
 
+run(["/usr/bin/xinput", "disable", device_name], capture_output=True, timeout=10)
+
 def set_source(s):
     global _s 
     source = {'DP': '15', 'HDMI': '17'}
