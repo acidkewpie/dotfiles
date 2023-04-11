@@ -15,7 +15,7 @@ def set_source(s):
     print(YELLOW if s == 'HDMI' else HIGHLIGHT, "", sep='', flush=True)
     if _s != s:
         run(["/usr/bin/ddccontrol", "-r", "0x60", "-w", source[s], 
-            "dev:/dev/i2c-16"], capture_output=True, timeout=10)
+            "dev:/dev/i2c-15"], capture_output=True, timeout=10)
         _s = s
 
 print(RED + '', flush=True)
