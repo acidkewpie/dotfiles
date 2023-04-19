@@ -14,9 +14,13 @@ monitor = Monitor.from_netlink(context)
 monitor.filter_by('hid')
 
 for line in run(["/usr/bin/ddcutil", "detect", "--sleep-multiplier", ".5"], capture_output=True).stdout.decode('utf8').split('\n'):
-    if 'I2C bus' in line: i2c = line.split('-')[1].strip()
-    if '1179911201181' in line: break
-print(i2c)
+    if 'I2C bus' in line: 
+        i2c = line.split('-')[1].strip()
+        run(["/usr/bin/logger", line, i2c])
+    if '1179911201181' in line: 
+        run(["/usr/bin/logger", line])
+        break
+run(["/usr/bin/logger", "i2c-device-for-ddcutil-is", i2c])
 
 def set_source(s):
     if s not in run(["/usr/bin/ddcutil", "getvcp", "0x60", "--sleep-multiplier", ".2", "--bus", i2c], capture_output=True).stdout.decode('utf8'):
