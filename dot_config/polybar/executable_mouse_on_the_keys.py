@@ -13,20 +13,23 @@ context = Context()
 monitor = Monitor.from_netlink(context)
 monitor.filter_by('hid')
 
-for line in run(["/usr/bin/ddcutil", "detect", "--sleep-multiplier", ".5"], capture_output=True).stdout.decode('utf8').split('\n'):
+detected=False
+detect = run(["/usr/bin/ddcutil", "detect", "--sleep-multiplier", ".5"], capture_output=True).stdout
+for line in detect.decode('utf8').split('\n'):
     if 'I2C bus' in line: 
         i2c = line.split('-')[1].strip()
-        run(["/usr/bin/logger", line, i2c])
     if '1179911201181' in line: 
-        run(["/usr/bin/logger", line])
+        detected=True
         break
 run(["/usr/bin/logger", "i2c-device-for-ddcutil-is", i2c])
 
 def set_source(s):
-    if s not in run(["/usr/bin/ddcutil", "getvcp", "0x60", "--sleep-multiplier", ".2", "--bus", i2c], capture_output=True).stdout.decode('utf8'):
-        run(["/usr/bin/ddcutil", "setvcp", "0x60", {'DisplayPort':'15','HDMI':'17'}[s], "--sleep-multiplier", ".2", "--bus", i2c], 
-            capture_output=True, timeout=10)
-    return(YELLOW if s == 'HDMI' else HIGHLIGHT)
+    if detected:
+        if s not in run(["/usr/bin/ddcutil", "getvcp", "0x60", "--sleep-multiplier", ".2", "--bus", i2c], capture_output=True).stdout.decode('utf8'):
+            run(["/usr/bin/ddcutil", "setvcp", "0x60", {'DisplayPort':'15','HDMI':'17'}[s], "--sleep-multiplier", ".2", "--bus", i2c], 
+                capture_output=True, timeout=10)
+        return(YELLOW if s == 'HDMI' else HIGHLIGHT)
+    return(RED)
 
 def get_hids():
     devices=[d.get('HID_NAME') for d in context.list_devices(subsystem='hid')]
