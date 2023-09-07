@@ -24,14 +24,15 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@
 for_window [class="Pavucontrol"] floating enable
-for_window [class="zoom" title="^(Zoom Meeting)"] floating enable
+for_window [class="zoom" title=".*Meeting.*"] floating disable
+for_window [class="zoom"] floating enable
 
 bindsym Print exec "maim -u -s -n -l -c 0.157,0.333,0.466,0.4 | xclip -selection clipboard -t image/png"
 bindsym Mod4+p exec ~/.config/picom/toggle.sh
 
 bindsym Mod4+Tab workspace back_and_forth
 
-floating_modifier Mod4+Space
+floating_modifier Mod4
 
 bindsym Mod4+t exec alacritty
 
