@@ -1,5 +1,5 @@
 {
-    "height": 23, // Waybar height (to be removed for auto height)
+    "height": 25, // Waybar height (to be removed for auto height)
     "margin-left": 0,
     "margin-right": 0,
     "margin-top": 0,
@@ -33,16 +33,16 @@
             "unlocked": ""
         }
     },
-    "sway/mode": {
-        "format": "<span style=\"italic\">{}</span>"
-    },
-    "sway/scratchpad": {
-        "format": "{icon} {count}",
-        "show-empty": false,
-        "format-icons": ["", ""],
-        "tooltip": true,
-        "tooltip-format": "{app}: {title}"
-    },
+    // "sway/mode": {
+    //     "format": "<span style=\"italic\">{}</span>"
+    // },
+    // "sway/scratchpad": {
+    //     "format": "{icon} {count}",
+    //     "show-empty": false,
+    //     "format-icons": ["", ""],
+    //     "tooltip": true,
+    //     "tooltip-format": "{app}: {title}"
+    // },
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
