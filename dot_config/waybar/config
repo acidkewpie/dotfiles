@@ -25,7 +25,8 @@
          }
     },
     "hyprland/window": {
-	"separate-outputs": true
+        "max-length": 200,
+        "separate-outputs": true
     },
     "keyboard-state": {
         "numlock": true,
