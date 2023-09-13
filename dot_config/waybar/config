@@ -2,7 +2,7 @@
     "height": 25, // Waybar height (to be removed for auto height)
     "margin-left": 0,
     "margin-right": 0,
-    "margin-top": -2,
+    "margin-top": -3,
     "spacing": 5, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces", "hyprland/submap"],
