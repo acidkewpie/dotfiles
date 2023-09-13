@@ -10,6 +10,6 @@
     "modules-right": ["pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "battery", "clock", "tray"],
     "include": [
 		"~/.config/waybar/modules.json",
-	],},
+	],
 }
 
