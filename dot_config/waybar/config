@@ -5,8 +5,8 @@
     "margin-top": 0,
     "spacing": 5, // Gaps between modules (4px)
     // Choose the order of the modules
-    "modules-left": ["hyprland/workspaces", "sway/mode", "sway/scratchpad"],
-    "modules-center": ["sway/window"],
+    "modules-left": ["hyprland/workspaces", "hyprland/mode", "hyprland/scratchpad"],
+    "modules-center": ["hyprland/window"],
     "modules-right": ["pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "battery", "clock", "tray"],
     // Modules configuration
     // "sway/workspaces": {
