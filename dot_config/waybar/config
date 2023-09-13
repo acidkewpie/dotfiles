@@ -5,11 +5,11 @@
     "margin-top": -3,
     "spacing": 5, // Gaps between modules (4px)
     // Choose the order of the modules
-    "modules-left": ["hyprland/workspaces", "hyprland/submap"],
-    "modules-center": ["hyprland/window"],
-    //"modules-right": ["pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "battery", "clock", "tray"],
+    //"modules-left": ["hyprland/workspaces", "hyprland/submap"],
+    //"modules-center": ["hyprland/window"],
+    "modules-right": ["pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "battery", "clock", "tray"],
     // Modules configuration
-    "sway/workspaces": {
+    "hyprland/workspaces": {
          "disable-scroll": true,
          "all-outputs": true,
          "format": "{name}: {icon}",
