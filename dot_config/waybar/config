@@ -5,7 +5,7 @@
     "margin-right": 0,
     "margin-top": 0,
     "spacing": 5,
-    
+    "layer": "top", 
     "output": ["DP-5"],
 
     "modules-left": ["hyprland/workspaces"],
@@ -20,7 +20,7 @@
     "margin-right": 0,
     "margin-top": 0,
     "spacing": 5,
-    
+    "layer": "top", 
     "output": ["DP-7"],
 
     "modules-left": ["hyprland/workspaces"],
