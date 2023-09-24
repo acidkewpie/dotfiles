@@ -6,7 +6,7 @@
     "margin-top": 0,
     "spacing": 5,
     "layer": "top", 
-    "output": ["eDP-1"],
+    "output": ["WL-1"],
 
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["wlr/taskbar"],
