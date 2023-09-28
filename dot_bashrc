@@ -62,5 +62,10 @@ if [[ $- == *i* ]]; then
 	REVRS=$( tput rev )
 fi 
 
+case $HOSTNAME in
 
-export PS1="\[$BOLDM\]\[$FGGRN\]\u@\h:\[$FGBLU\]\W\[$FGYLO\] \$ \[$RESET\]"
+   thinkpad.untrepid.com)
+      FG=$FGBLU
+   ideapad.untrepid.com)
+      FG=FGGRN
+export PS1="\[$BOLDM\]\[$FG\]\u@\h:\[$FGBLU\]\W\[$FGYLO\] \$ \[$RESET\]"
