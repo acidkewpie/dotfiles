@@ -1,34 +1,17 @@
-[
   {
+
     "height": 23,
     "margin-left": 0,
     "margin-right": 0,
     "margin-top": 0,
     "spacing": 5,
-    
-    "output": ["DP-5"],
+    "layer": "top", 
+    "output": ["DP-9", "DP-7", "HDMI-A-1"],
 
     "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["hyprland/window"],
+    "modules-center": ["wlr/taskbar"],
     "modules-right": ["pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "battery", "clock", "tray"],
-
-    "include": [ "~/.config/waybar/modules.json", ],
-  },
-  {
-    "height": 23,
-    "margin-left": 0,
-    "margin-right": 0,
-    "margin-top": 0,
-    "spacing": 5,
-    
-    "output": ["DP-7"],
-
-    "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["hyprland/window"],
-    "modules-right": ["pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "battery", "clock", "tray"],
-
     "include": [ "~/.config/waybar/modules.json", ],
   }
-]
 
 
