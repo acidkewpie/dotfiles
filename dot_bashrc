@@ -37,6 +37,7 @@ export MOZ_ENABLE_WAYLAND=1
 export EDITOR=/usr/bin/vi
 alias google-chrome="google-chrome --password-store=gnome"
 
+TERM=fake_value_to_hush_tput
 FGBLK=$( tput setaf 0 ) # 000000
 FGRED=$( tput setaf 1 ) # ff0000
 FGGRN=$( tput setaf 121 ) # 00ff00
