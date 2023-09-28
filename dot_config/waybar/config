@@ -24,7 +24,7 @@
     "output": ["DP-5"],
 
     "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["hyprland/window"],
+    "modules-center": ["wlr/taskbar"],
     "modules-right": ["pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "battery", "clock", "tray"],
 
     "include": [ "~/.config/waybar/modules.json", ],
@@ -39,7 +39,7 @@
     "output": ["DP-7"],
 
     "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["hyprland/window"],
+    "modules-center": ["wlr/taskbar"],
     "modules-right": ["pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "battery", "clock", "tray"],
 
     "include": [ "~/.config/waybar/modules.json", ],
