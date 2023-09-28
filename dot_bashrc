@@ -38,9 +38,9 @@ export EDITOR=/usr/bin/vi
 alias google-chrome="google-chrome --password-store=gnome"
 
 TERM=fake_value_to_hush_tput
-FGBLK=$( tput setaf 0 ) # 000000
-FGRED=$( tput setaf 1 ) # ff0000
-FGGRN=$( tput setaf 121 ) # 00ff00
+FGBLK=$( tput -Tx setaf 0 ) # 000000
+FGRED=$( tput -Tx setaf 1 ) # ff0000
+FGGRN=$( tput -Tx setaf 121 ) # 00ff00
 FGYLO=$( tput setaf 11 ) # ffff00
 FGBLU=$( tput setaf 4 ) # 0000ff
 FGMAG=$( tput setaf 5 ) # ff00ff
