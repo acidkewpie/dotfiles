@@ -1,0 +1,96 @@
+version = "1.1.11"
+
+[format]
+dedup = false
+dedup_inactive_fullscreen = false # dedup more
+delim = " "
+
+# available formatter:
+# {counter_sup} - superscripted count of clients on the workspace, and simple {counter}, {delim}
+# {icon}, {client}
+# workspace formatter
+workspace = "{name}:{delim}{clients}" # {id}, {delim} and {clients} are supported
+workspace_empty = "{name}" # {id}, {delim} and {clients} are supported
+# client formatter
+client = "{icon}"
+client_active = "<span color='#aa0000'>{icon}</span>"
+
+# deduplicate client formatter
+# client_fullscreen = "[{icon}]"
+# client_dup = "{client}{counter_sup}"
+# client_dup_fullscreen = "[{icon}]{delim}{icon}{counter_unfocused}"
+# client_dup_active = "*{icon}*{delim}{icon}{counter_unfocused}"
+
+[class]
+# Add your icons mapping
+# use double quote the key and the value
+# take class name from 'hyprctl clients'
+"DEFAULT" = "" 
+"[Ff]irefox" = ""
+"[Aa]lacritty" = "󰞷"
+"[Zz]oom" = ""
+"[Ww]lroots" = ""
+"Gimp-2.10" = ""
+"easyeffects" = ""
+# [initial_class]
+# "DEFAULT" = " {class}: {title}"
+# "(?i)Kitty" = "term"
+
+# [initial_class_active]
+# "(?i)Kitty" = "*TERM*"
+
+[title_in_class."(?i)kitty"]
+"(?i)neomutt" = "neomutt"
+# regex captures support is supported
+# "emerge: (.+?/.+?)-.*" = "{match1}"
+
+[title_in_class_active."(?i)firefox"]
+"(?i)twitch" = "<span color='purple'>{icon}</span>"
+
+# [title_in_initial_class."(?i)kitty"]
+# "(?i)neomutt" = "neomutt"
+
+# [initial_title_in_class."(?i)kitty"]
+# "(?i)neomutt" = "neomutt"
+
+# [initial_title_in_initial_class."(?i)kitty"]
+# "(?i)neomutt" = "neomutt"
+
+# [initial_title."(?i)kitty"]
+# "zsh" = "Zsh"
+
+# [initial_title_active."(?i)kitty"]
+# "zsh" = "*Zsh*"
+
+# Add your applications that need to be exclude
+# The key is the class, the value is the title.
+# You can put an empty title to exclude based on
+# class name only, "" make the job.
+[exclude]
+"" = "^$" # prevent displaying icon for empty class
+"(?i)fcitx" = ".*" # will match all title for fcitx
+"(?i)TestApp" = "" # will match all title for TestApp
+aProgram = "^$" # will match null title for aProgram
+"[Ss]team" = "^(Friends List.*)?$" # will match Steam friends list plus all popups (empty titles)
+
+[workspaces_name]
+1 = "1"
+2 = "2"
+3 = "3"
+4 = "4"
+5 = "5"
+6 = "1"
+7 = "2"
+8 = "3"
+9 = "4"
+10 = "5"
+11 = "1"
+12 = "2"
+13 = "3"
+14 = "4"
+15 = "5"
+16 = "1"
+17 = "2"
+18 = "3"
+19 = "4"
+20 = "5"
