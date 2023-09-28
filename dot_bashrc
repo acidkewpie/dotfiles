@@ -65,7 +65,12 @@ fi
 case $HOSTNAME in
 
    thinkpad.untrepid.com)
-      FG=$FGBLU
+      FG1=$FGBLU
+      FG2=$FGGRN
+      ;;
    ideapad.untrepid.com)
-      FG=FGGRN
-export PS1="\[$BOLDM\]\[$FG\]\u@\h:\[$FGBLU\]\W\[$FGYLO\] \$ \[$RESET\]"
+      FG1=$FGGRN
+      FG2=$FGBLU
+      ;;
+esac
+export PS1="\[$BOLDM\]\[$FG1\]\u@\h:\[$FG2\]\W\[$FGYLO\] \$ \[$RESET\]"
