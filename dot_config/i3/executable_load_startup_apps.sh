@@ -6,5 +6,5 @@ alacritty &
 alacritty &
 sleep 5
 i3-msg workspace 1
-google-chrome --password-store=gnome &
-
+#google-chrome --password-store=gnome &
+firefox &

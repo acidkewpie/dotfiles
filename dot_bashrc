@@ -33,7 +33,7 @@ function vi() {
     && chezmoi edit --watch --hardlink=false $1\
     || vim $@
 }
-
+export MOZ_ENABLE_WAYLAND=1
 export EDITOR=/usr/bin/vi
 alias google-chrome="google-chrome --password-store=gnome"
 
