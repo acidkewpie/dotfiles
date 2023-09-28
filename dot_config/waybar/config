@@ -6,49 +6,11 @@
     "margin-top": 0,
     "spacing": 5,
     "layer": "top", 
-<<<<<<< HEAD
     "output": ["DP-9", "DP-7", "HDMI-A-1"],
-=======
-    "output": ["WL-1"],
->>>>>>> 12646f9ffac44667b168c92c5939701ba883c017
 
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["wlr/taskbar"],
     "modules-right": ["pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "battery", "clock", "tray"],
-<<<<<<< HEAD
-=======
-
-    "include": [ "~/.config/waybar/modules.json", ],
-  },
-  {
-    "height": 23,
-    "margin-left": 0,
-    "margin-right": 0,
-    "margin-top": 0,
-    "spacing": 5,
-    "layer": "top", 
-    "output": ["DP-5"],
-
-    "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["wlr/taskbar"],
-    "modules-right": ["pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "battery", "clock", "tray"],
-
-    "include": [ "~/.config/waybar/modules.json", ],
-  },
-  {
-    "height": 23,
-    "margin-left": 0,
-    "margin-right": 0,
-    "margin-top": 0,
-    "spacing": 5,
-    "layer": "top", 
-    "output": ["DP-7"],
-
-    "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["wlr/taskbar"],
-    "modules-right": ["pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "battery", "clock", "tray"],
-
->>>>>>> 12646f9ffac44667b168c92c5939701ba883c017
     "include": [ "~/.config/waybar/modules.json", ],
   }
 
